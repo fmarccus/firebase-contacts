@@ -38,105 +38,132 @@
 
 <body class="background">
 
-    <!--create data-->
-    <section style="padding-top:60px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9 mx-auto">
-                    <div class="card bg-light">
-                        <div class="card-body">
-                            <h4 class="card-title mb-4">Create New Contact</h4>
-                            <form id="formdata">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label for="lastname"><i class="fas fa-user me-1"></i>Name</label>
-                                            <input type="text" class="form-control" name="lastname" id="lastname"
-                                                aria-describedby="helpId" placeholder="Last Name">
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <!--create data-->
+            <section style="padding-top:60px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 mx-auto">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-4">Create New Contact</h4>
+                                    <form id="formdata">
+                                        <div class="row">
+                                            <div class="col-md-12 mb-2">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="basic-addon1"><i
+                                                                class="fas fa-user me-1"></i></span>
+                                                    </div>
+                                                    <input type="text" class="form-control" name="lastname"
+                                                        id="lastname" aria-describedby="helpId" placeholder="Last Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-2">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="basic-addon1"><i
+                                                                class="fas fa-user me-1"></i></span>
+                                                    </div>
+                                                    <input type="text" class="form-control" name="firstname"
+                                                        id="firstname" aria-describedby="helpId"
+                                                        placeholder="First Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-2">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="basic-addon1"><i
+                                                                class="fas fa-user me-1"></i></span>
+                                                    </div>
+                                                    <input type="text" class="form-control" name="middlename"
+                                                        id="middlename" aria-describedby="helpId"
+                                                        placeholder="Middle Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-2">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="basic-addon1"><i
+                                                                class="fas fa-envelope-square me-1"></i></span>
+                                                    </div>
+                                                    <input type="email" class="form-control" name="email" id="email"
+                                                        aria-describedby="helpId" placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-2">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="basic-addon1"><i
+                                                                class="fas fa-phone-square me-1"></i></span>
+                                                    </div>
+                                                    <input type="text" class="form-control" name="contact" id="contact"
+                                                        aria-describedby="helpId" placeholder="Contact Number">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-2">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="basic-addon1"><i
+                                                                class="fas fa-house-user"></i></span>
+                                                    </div>
+                                                    <input type="text" class="form-control" name="address" id="address"
+                                                        aria-describedby="helpId" placeholder="Address">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 text-end">
+                                                <button id="btnsubmit" type="submit"
+                                                    class="btn btn-primary btn-sm">Done</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label for="firstname" style="opacity: 0;">First Name</label>
-                                            <input type="text" class="form-control" name="firstname" id="firstname"
-                                                aria-describedby="helpId" placeholder="First Name">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label for="middlename" style="opacity: 0;">Middle Name</label>
-                                            <input type="text" class="form-control" name="middlename" id="middlename"
-                                                aria-describedby="helpId" placeholder="Middle Name">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="email"><i class="fas fa-envelope-square me-1"></i>Email</label>
-                                            <input type="email" class="form-control" name="email" id="email"
-                                                aria-describedby="helpId" placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="contact"><i class="fas fa-phone-square me-1"></i>Contact
-                                                Number</label>
-                                            <input type="text" class="form-control" name="contact" id="contact"
-                                                aria-describedby="helpId" placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 mb-2">
-                                        <div class="form-group">
-                                            <label for="address"><i class="fas fa-house-user me-1"></i>Address</label>
-                                            <input type="text" class="form-control" name="address" id="address"
-                                                aria-describedby="helpId" placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 text-end">
-                                        <button id="btnsubmit" type="submit"
-                                            class="btn btn-primary btn-sm">Done</button>
-                                    </div>
+                                    </form>
                                 </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--end of create data-->
-
-    <!--table-->
-    <section style="padding-top:30px; padding-bottom:50px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9 mx-auto">
-                    <div class="card bg-light">
-                        <div class="card-body">
-                            <h4 class="card-title mb-4">Contacts</h4>
-                            <div class="table-responsive">
-                                <table class="table table-default table-hover table-sm table-inverse">
-                                    <thead class="thead-inverse">
-                                        <tr>
-                                            <th>Last SName</th>
-                                            <th>First Name</th>
-                                            <th>Middle Name</th>
-                                            <th>Email</th>
-                                            <th>Contact</th>
-                                            <th>Address</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="tabledata">
-
-                                    </tbody>
-                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <!--end of create data-->
+
         </div>
-    </section>
-    <!--end of table-->
+        <div class="col-md-8 col-sm-12">
+            <!--table-->
+            <section style="padding-top:60px; padding-bottom:50px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 mx-auto">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-4">Contacts</h4>
+                                    <div class="table-responsive">
+                                        <table class="table table-default table-sm table-hover table-inverse">
+                                            <thead class="thead-inverse">
+                                                <tr>
+                                                    <th>Last Name</th>
+                                                    <th>First Name</th>
+                                                    <th>Middle Name</th>
+                                                    <th>Email</th>
+                                                    <th>Contact</th>
+                                                    <th>Address</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tabledata">
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--end of table-->
+        </div>
+    </div>
+
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

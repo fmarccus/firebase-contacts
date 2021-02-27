@@ -19,6 +19,7 @@ formdata.on('submit', (e) => {
     $("#email").val("");
     $("#contact").val("");
     $("#address").val("");
+    alert("New Contact Added!");
 })
 
 
