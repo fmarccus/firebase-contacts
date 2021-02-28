@@ -1,3 +1,5 @@
+<!--cloud link for easier testing: https://firebase-contact-list.netlify.app -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,7 +49,7 @@
                         <div class="col-md-12 mx-auto">
                             <div class="card bg-light">
                                 <div class="card-body">
-                                    <h4 class="card-title mb-4">Create New Contact</h4>
+                                    <h4 class="card-title mb-4">Create New Profile</h4>
                                     <form id="formdata">
                                         <div class="row">
                                             <div class="col-md-12 mb-2">
@@ -57,7 +59,7 @@
                                                                 class="fas fa-user me-1"></i></span>
                                                     </div>
                                                     <input type="text" class="form-control" name="lastname"
-                                                        id="lastname" aria-describedby="helpId" placeholder="Last Name">
+                                                        id="lastname" aria-describedby="helpId" placeholder="Last Name" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-12 mb-2">
@@ -68,7 +70,7 @@
                                                     </div>
                                                     <input type="text" class="form-control" name="firstname"
                                                         id="firstname" aria-describedby="helpId"
-                                                        placeholder="First Name">
+                                                        placeholder="First Name" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-12 mb-2">
@@ -79,7 +81,7 @@
                                                     </div>
                                                     <input type="text" class="form-control" name="middlename"
                                                         id="middlename" aria-describedby="helpId"
-                                                        placeholder="Middle Name">
+                                                        placeholder="Middle Name" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 mb-2">
@@ -89,7 +91,7 @@
                                                                 class="fas fa-envelope-square me-1"></i></span>
                                                     </div>
                                                     <input type="email" class="form-control" name="email" id="email"
-                                                        aria-describedby="helpId" placeholder="Email">
+                                                        aria-describedby="helpId" placeholder="Email" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 mb-2">
@@ -99,7 +101,7 @@
                                                                 class="fas fa-phone-square me-1"></i></span>
                                                     </div>
                                                     <input type="text" class="form-control" name="contact" id="contact"
-                                                        aria-describedby="helpId" placeholder="Contact Number">
+                                                        aria-describedby="helpId" placeholder="Contact Number" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-12 mb-2">
@@ -109,7 +111,7 @@
                                                                 class="fas fa-house-user"></i></span>
                                                     </div>
                                                     <input type="text" class="form-control" name="address" id="address"
-                                                        aria-describedby="helpId" placeholder="Address">
+                                                        aria-describedby="helpId" placeholder="Address" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-12 text-end">
@@ -125,8 +127,8 @@
                 </div>
             </section>
             <!--end of create data-->
-
         </div>
+
         <div class="col-md-8 col-sm-12">
             <!--table-->
             <section style="padding-top:60px; padding-bottom:50px;">
@@ -135,7 +137,7 @@
                         <div class="col-md-12 mx-auto">
                             <div class="card bg-light">
                                 <div class="card-body">
-                                    <h4 class="card-title mb-4">Contacts</h4>
+                                    <h4 class="card-title mb-4">Profiles</h4>
                                     <div class="table-responsive">
                                         <table class="table table-default table-sm table-hover table-inverse">
                                             <thead class="thead-inverse">
